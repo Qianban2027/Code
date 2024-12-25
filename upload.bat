@@ -1,3 +1,3 @@
 git add .
-git commit -m 1
+git commit -m "pushedby upload.bat"
 git push origin master
