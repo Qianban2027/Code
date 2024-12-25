@@ -2,5 +2,5 @@
 git add .
 git commit -m "pushed by upload.bat"
 git push origin master
-echo 鍚屾瀹屾垚
+echo 同步完成
 pause
