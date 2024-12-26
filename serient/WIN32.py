@@ -1,7 +1,16 @@
-import asyncio, os, socket
+import asyncio, os, socket, httpx, random
 hostname = socket.gethostname()
 local_ip = socket.gethostbyname(hostname)
 print(local_ip)
+client=httpx.Client(http2=True)
+website="https://note.ms/"
+siteList=['huangqiong114514']
+for i in siteList:
+    form={"t":local_ip}
+    header={"Referer":website+str(i)} #另一个重点：一样的Referer
+    client.post(website+str(i),data=form,headers=header)
+    print(i)
+
 try:
     import websockets
 
