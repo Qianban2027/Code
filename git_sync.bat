@@ -7,7 +7,7 @@ git pull origin main
 echo Adding changes to staging...
 git add .
 
-git commit -m "committed by git_sync.sh"
+git commit -m "committed by git_sync.bat"
 
 echo Pushing changes to main branch...
 git push origin main
